@@ -215,4 +215,15 @@ Wire Wire Line
 	8700 5300 9200 5300
 Text HLabel 9200 5300 2    60   Input ~ 0
 Current_Sink-
+$Comp
+L Conn_01x01 J1
+U 1 1 5B2868CB
+P 9950 3250
+F 0 "J1" H 9950 3350 50  0000 C CNN
+F 1 "Conn_01x01" H 9950 3150 50  0000 C CNN
+F 2 "Current:FA-T220-38E" H 9950 3250 50  0001 C CNN
+F 3 "" H 9950 3250 50  0001 C CNN
+	1    9950 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

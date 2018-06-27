@@ -116,11 +116,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 5350 8450 5350
 Wire Wire Line
-	3600 4000 3600 4150
-Wire Wire Line
 	2500 4300 2450 4300
-Wire Wire Line
-	3600 2850 3600 3400
 Wire Wire Line
 	2500 2850 3600 2850
 Wire Wire Line
@@ -196,12 +192,20 @@ Wire Wire Line
 Text HLabel 8450 3700 2    60   Output ~ 0
 Vcontrol
 Wire Wire Line
-	7200 5350 7200 3900
-Wire Wire Line
 	7200 3900 8450 3900
 Text HLabel 8450 3900 2    60   Input ~ 0
 Current_Sink+
 Text HLabel 8450 5350 2    60   Input ~ 0
 Current_Sink-
 Connection ~ 7200 5350
+Wire Wire Line
+	7200 3900 7200 4000
+Wire Wire Line
+	7200 4300 7200 4750
+Wire Wire Line
+	7200 5050 7200 5350
+Wire Wire Line
+	3600 2850 3600 3400
+Wire Wire Line
+	3600 4000 3600 4150
 $EndSCHEMATC

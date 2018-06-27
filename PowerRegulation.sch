@@ -156,8 +156,6 @@ Connection ~ 6300 3850
 Connection ~ 4850 3100
 Wire Wire Line
 	5800 3950 4850 3950
-Wire Wire Line
-	5800 3700 5800 4000
 Connection ~ 5800 3950
 Wire Wire Line
 	5250 3150 5250 3100
@@ -170,18 +168,20 @@ Connection ~ 5250 3950
 Wire Wire Line
 	5700 3850 6600 3850
 Connection ~ 5800 3850
-Wire Wire Line
-	5900 3700 5900 3850
 Connection ~ 5900 3850
 Wire Wire Line
 	6000 3700 6000 3850
 Connection ~ 6000 3850
 Wire Wire Line
 	5700 3700 5700 3850
-Wire Wire Line
-	6150 3100 6900 3100
 Text GLabel 6900 3100 2    60   Input ~ 0
 2.7V
 Text HLabel 4450 3100 0    60   Input ~ 0
 Vin
+Wire Wire Line
+	5800 3700 5800 4000
+Wire Wire Line
+	5900 3700 5900 3850
+Wire Wire Line
+	6150 3100 6900 3100
 $EndSCHEMATC

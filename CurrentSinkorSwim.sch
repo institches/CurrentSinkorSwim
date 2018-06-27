@@ -53,7 +53,7 @@ U 1 1 5B1871C6
 P 7350 2250
 F 0 "J103" H 7350 2350 50  0000 C CNN
 F 1 "Conn_01x02" V 7450 2200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 7350 2250 50  0001 C CNN
+F 2 "Current:Terminal_Block_200_thou" H 7350 2250 50  0001 C CNN
 F 3 "" H 7350 2250 50  0001 C CNN
 	1    7350 2250
 	1    0    0    -1  
@@ -72,7 +72,7 @@ U 1 1 5B1CFFCF
 P 6050 1750
 F 0 "J102" H 6050 1950 50  0000 C CNN
 F 1 "Conn_01x03" V 6150 1750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 6050 1750 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6050 1750 50  0001 C CNN
 F 3 "" H 6050 1750 50  0001 C CNN
 	1    6050 1750
 	0    -1   -1   0   
@@ -85,7 +85,7 @@ U 1 1 5B1D04AE
 P 3000 2100
 F 0 "J101" H 3000 2200 50  0000 C CNN
 F 1 "Conn_01x02" V 3100 2050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 3000 2100 50  0001 C CNN
+F 2 "Current:Terminal_Block_200_thou" H 3000 2100 50  0001 C CNN
 F 3 "" H 3000 2100 50  0001 C CNN
 	1    3000 2100
 	-1   0    0    1   
