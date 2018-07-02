@@ -74,12 +74,12 @@ $EndComp
 $Comp
 L R R301
 U 1 1 5B20DEE0
-P 4000 4500
-F 0 "R301" V 4080 4500 50  0000 C CNN
-F 1 "R" V 4000 4500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3930 4500 50  0001 C CNN
-F 3 "" H 4000 4500 50  0001 C CNN
-	1    4000 4500
+P 4200 4000
+F 0 "R301" V 4280 4000 50  0000 C CNN
+F 1 "68K" V 4200 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4130 4000 50  0001 C CNN
+F 3 "" H 4200 4000 50  0001 C CNN
+	1    4200 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -107,86 +107,40 @@ $EndComp
 $Comp
 L POT RV301
 U 1 1 5B20DEF4
-P 4000 3850
-F 0 "RV301" V 3825 3850 50  0000 C CNN
-F 1 "POT" V 3900 3850 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_WirePads_largePads" H 4000 3850 50  0001 C CNN
-F 3 "" H 4000 3850 50  0001 C CNN
-	1    4000 3850
+P 4200 4430
+F 0 "RV301" V 4025 4430 50  0000 C CNN
+F 1 "10K" V 4100 4430 50  0000 C CNN
+F 2 "Current:P090L-02F25BR10K" H 4200 4430 50  0001 C CNN
+F 3 "" H 4200 4430 50  0001 C CNN
+	1    4200 4430
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR06
 U 1 1 5B20DEFB
-P 4750 2900
-F 0 "#PWR06" H 4750 2650 50  0001 C CNN
-F 1 "GND" H 4750 2750 50  0000 C CNN
-F 2 "" H 4750 2900 50  0001 C CNN
-F 3 "" H 4750 2900 50  0001 C CNN
-	1    4750 2900
+P 4750 2392
+F 0 "#PWR06" H 4750 2142 50  0001 C CNN
+F 1 "GND" H 4750 2242 50  0000 C CNN
+F 2 "" H 4750 2392 50  0001 C CNN
+F 3 "" H 4750 2392 50  0001 C CNN
+	1    4750 2392
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8700 3450 8700 4450
-Wire Wire Line
-	5100 3350 4850 3350
-Wire Wire Line
-	4850 3350 4850 4100
-Wire Wire Line
-	4850 4100 8700 4100
-Connection ~ 8700 4100
-Wire Wire Line
-	4000 4000 4000 4350
-Wire Wire Line
-	4000 4650 4000 4900
-Wire Wire Line
-	4000 4900 8700 4900
-Connection ~ 8700 4900
-Wire Wire Line
-	5300 3550 5300 3700
-Wire Wire Line
-	4200 3850 4150 3850
-Wire Wire Line
-	5300 2400 5300 2950
-Wire Wire Line
-	4200 2400 5300 2400
-Wire Wire Line
-	8700 1300 8700 3050
-Wire Wire Line
-	4750 2800 4750 2900
 $Comp
 L C C301
 U 1 1 5B20DF16
-P 4750 2650
-F 0 "C301" H 4775 2750 50  0000 L CNN
-F 1 "C" H 4775 2550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4788 2500 50  0001 C CNN
-F 3 "" H 4750 2650 50  0001 C CNN
-	1    4750 2650
+P 4750 2142
+F 0 "C301" H 4775 2242 50  0000 L CNN
+F 1 "C" H 4775 2042 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4788 1992 50  0001 C CNN
+F 3 "" H 4750 2142 50  0001 C CNN
+	1    4750 2142
 	1    0    0    -1  
 $EndComp
-Connection ~ 4750 2400
-Connection ~ 4200 2400
-Wire Wire Line
-	4750 2500 4750 2400
-Connection ~ 4000 4150
-Wire Wire Line
-	4450 3150 5100 3150
-Wire Wire Line
-	4450 4150 4000 4150
-Wire Wire Line
-	4450 3150 4450 4150
 Text GLabel 3250 1850 0    60   Input ~ 0
 2.7V
-Wire Wire Line
-	3250 1850 4200 1850
-Connection ~ 4200 1850
-Wire Wire Line
-	4200 1850 4200 3850
 Text HLabel 8900 1300 2    60   Input ~ 0
 Current_Sink+
-Wire Wire Line
-	8900 1300 8700 1300
 $Comp
 L R R302
 U 1 1 5B20E5D2
@@ -198,21 +152,8 @@ F 3 "" H 6350 3250 50  0001 C CNN
 	1    6350 3250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6200 3250 5700 3250
-Wire Wire Line
-	6500 3250 8400 3250
-Wire Wire Line
-	7500 3250 7500 950 
-Wire Wire Line
-	7500 950  8900 950 
-Connection ~ 7500 3250
 Text HLabel 8900 950  2    60   Input ~ 0
 FET_Gate
-Wire Wire Line
-	8700 4750 8700 5300
-Wire Wire Line
-	8700 5300 9200 5300
 Text HLabel 9200 5300 2    60   Input ~ 0
 Current_Sink-
 $Comp
@@ -226,4 +167,58 @@ F 3 "" H 9950 3250 50  0001 C CNN
 	1    9950 3250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8700 3450 8700 4450
+Wire Wire Line
+	5100 3350 4850 3350
+Wire Wire Line
+	4850 3350 4850 4100
+Wire Wire Line
+	4850 4100 8700 4100
+Connection ~ 8700 4100
+Connection ~ 8700 4900
+Wire Wire Line
+	5300 3550 5300 3700
+Wire Wire Line
+	8700 1300 8700 3050
+Wire Wire Line
+	4750 2292 4750 2392
+Wire Wire Line
+	4450 3150 5100 3150
+Wire Wire Line
+	3250 1850 5300 1850
+Connection ~ 4200 1850
+Wire Wire Line
+	4200 1850 4200 3850
+Wire Wire Line
+	8900 1300 8700 1300
+Wire Wire Line
+	6200 3250 5700 3250
+Wire Wire Line
+	6500 3250 8400 3250
+Wire Wire Line
+	7500 3250 7500 950 
+Wire Wire Line
+	7500 950  8900 950 
+Connection ~ 7500 3250
+Wire Wire Line
+	8700 4750 8700 5300
+Wire Wire Line
+	8700 5300 9200 5300
+Wire Wire Line
+	5300 1850 5300 2950
+Wire Wire Line
+	4750 1990 4750 1850
+Connection ~ 4750 1850
+Wire Wire Line
+	4450 3150 4450 4200
+Wire Wire Line
+	4450 4200 4200 4200
+Wire Wire Line
+	4200 4150 4200 4280
+Wire Wire Line
+	4350 4900 8700 4900
+Wire Wire Line
+	4350 4900 4350 4430
+Connection ~ 4200 4200
 $EndSCHEMATC
