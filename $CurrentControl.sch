@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:CurrentSinkOrSwim-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -11,6 +10,7 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
+LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -46,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LMV358-RESCUE-CurrentSinkOrSwim U201
+L LMV358 U201
 U 2 1 54DADC5E
 P 5500 3700
 F 0 "U201" H 5450 3900 60  0000 L CNN
@@ -57,7 +57,7 @@ F 3 "" H 5500 3700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-RESCUE-CurrentSinkOrSwim R403
+L R R403
 U 1 1 54DADC66
 P 8100 5150
 F 0 "R403" V 8180 5150 50  0000 C CNN
@@ -108,7 +108,7 @@ Wire Wire Line
 	3750 3600 5000 3600
 Connection ~ 8100 5450
 $Comp
-L POT-RESCUE-CurrentSinkOrSwim RV401
+L POT RV401
 U 1 1 54DADC9B
 P 3750 4050
 F 0 "RV401" H 3750 3950 50  0000 C CNN
@@ -124,6 +124,33 @@ Wire Wire Line
 Wire Wire Line
 	5400 2600 5400 3300
 Connection ~ 3750 2600
+$Comp
+L GND #PWR07
+U 1 1 54DADCA8
+P 4800 3300
+F 0 "#PWR07" H 4800 3050 60  0001 C CNN
+F 1 "GND" H 4800 3150 60  0000 C CNN
+F 2 "" H 4800 3300 60  0000 C CNN
+F 3 "" H 4800 3300 60  0000 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C401
+U 1 1 54DADCAE
+P 4800 3050
+F 0 "C401" H 4850 3150 50  0000 L CNN
+F 1 "C" H 4850 2950 50  0000 L CNN
+F 2 "SMD_Packages:SMD-0805" H 4838 2900 30  0001 C CNN
+F 3 "" H 4800 3050 60  0000 C CNN
+	1    4800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2850 4800 2600
+Connection ~ 4800 2600
+Wire Wire Line
+	4800 3300 4800 3250
 Wire Wire Line
 	8100 1500 8100 3500
 Text GLabel 2300 2000 0    60   Input ~ 0
@@ -137,7 +164,7 @@ Current_Sink+
 Wire Wire Line
 	8650 1500 8100 1500
 $Comp
-L R-RESCUE-CurrentSinkOrSwim R402
+L R R402
 U 1 1 54DAE31B
 P 6450 3700
 F 0 "R402" V 6530 3700 50  0000 C CNN
@@ -174,7 +201,7 @@ F 3 "" H 9350 3500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-RESCUE-CurrentSinkOrSwim R401
+L R R401
 U 1 1 54DADC7B
 P 3750 3100
 F 0 "R401" V 3830 3100 50  0000 C CNN
